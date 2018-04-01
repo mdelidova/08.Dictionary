@@ -38,6 +38,27 @@
         NSLog(@"key = %@, value = %@", key, obj);
     }
     
+    
+    NSDictionary* dictionary1 = [[NSDictionary alloc] initWithObjectsAndKeys:
+                                 @"Cat",@"animal",
+                                 @"White",@"colour",
+                                 @"Dress",@"clothes",
+                                 [NSNumber numberWithInt:5],@"number",nil];
+    NSLog(@"%@",dictionary1);
+    
+    NSLog(@"animal = %@, colour = %@, clothes = %@, number = %d",
+          [dictionary1 objectForKey:@"animal"],
+          [dictionary1 objectForKey:@"colour"],
+          [dictionary1 objectForKey:@"clothes"],
+          [[dictionary1 objectForKey:@"number"] intValue]);
+    
+    for (NSString* key in [dictionary1 allKeys]) {
+        
+        id obj = [dictionary1 objectForKey:key];
+        
+        NSLog(@"key = %@, value = %@", key, obj);
+    }
+
     return YES;
 }
 
