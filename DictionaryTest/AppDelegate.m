@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "MDNumber.h"
+#import "MDGeometry.h"
 
 @interface AppDelegate ()
 
@@ -18,12 +20,13 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    NSDictionary* dictionary = [[NSDictionary alloc] initWithObjectsAndKeys:
-                                @"Delidova", @"lastName",
-                                @"Maryna", @"name",
-                                [NSNumber numberWithInt:15], @"age", nil];
     
-    
+//    NSDictionary* dictionary = [[NSDictionary alloc] initWithObjectsAndKeys:
+//                                @"Delidova", @"lastName",
+//                                @"Maryna", @"name",
+//                                [NSNumber numberWithInt:15], @"age", nil];
+
+    /*
     NSLog(@"%@",dictionary);
     
     NSLog(@"name = %@, lastname = %@, age = %d",
@@ -58,9 +61,54 @@
         
         NSLog(@"key = %@, value = %@", key, obj);
     }
+    */
+    
+    MDNumber* exchange = [[MDNumber alloc] init];
+    
+    Digits temp;
+    temp.a = 10;
+    temp.b = 20;
+    
+    Digits digits = [exchange replace:temp];
 
+    NSLog(@"temp a = %d, b = %d => a = %d, b = %d", temp.a, temp.b, digits.a, digits.b );
+
+    MDGeometry* geometry = [[MDGeometry alloc] init];
+    
+    CGFloat side = 100;
+    
+    CGFloat perimeter = [geometry perimeter: side];
+    
+    NSLog(@"P = %f", perimeter);
+    
+    CGFloat area = [geometry area:side];
+    
+    NSLog(@"S = %f", area);
+    
+    CGFloat side1 = 20;
+    CGFloat side2 = 30;
+    
+    CGFloat perimeter1 = [geometry perimeter:side1 and:side2]; // perimeter1:side1 and: side2];
+    CGFloat area1 = [geometry area:side1 and: side2];
+    
+    NSLog(@"P = %d, S = %f", perimeter1, area1);
+    
+    CGFloat diameter = 5;
+    
+    CGFloat length = [geometry length:diameter];
+    
+    NSLog(@"L = %f", length);
+    
+    CGFloat length1 = 2;
+    
+    CGFloat amount = [geometry amount:length1];
+    CGFloat surfaceArea = [geometry surfaceArea:length1];
+    
+    NSLog(@"V = %f, S = %f", amount, surfaceArea);
+    
     return YES;
 }
+
 
 
 - (void)applicationWillResignActive:(UIApplication *)application {

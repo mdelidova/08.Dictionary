@@ -13,6 +13,8 @@
 		24660D6D206CC65800E43C2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24660D6C206CC65800E43C2A /* Assets.xcassets */; };
 		24660D70206CC65800E43C2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24660D6E206CC65800E43C2A /* LaunchScreen.storyboard */; };
 		24660D73206CC65800E43C2A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 24660D72206CC65800E43C2A /* main.m */; };
+		24872F982070DBFC00227825 /* MDNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 24872F972070DBFC00227825 /* MDNumber.m */; };
+		24F6A2822070F0BB002538B6 /* MDGeometry.m in Sources */ = {isa = PBXBuildFile; fileRef = 24F6A2812070F0BB002538B6 /* MDGeometry.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		24660D6F206CC65800E43C2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		24660D71206CC65800E43C2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		24660D72206CC65800E43C2A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		24872F962070DBFC00227825 /* MDNumber.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDNumber.h; sourceTree = "<group>"; };
+		24872F972070DBFC00227825 /* MDNumber.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDNumber.m; sourceTree = "<group>"; };
+		24F6A2802070F0BB002538B6 /* MDGeometry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDGeometry.h; sourceTree = "<group>"; };
+		24F6A2812070F0BB002538B6 /* MDGeometry.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDGeometry.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,10 @@
 		24660D62206CC65800E43C2A /* DictionaryTest */ = {
 			isa = PBXGroup;
 			children = (
+				24F6A2802070F0BB002538B6 /* MDGeometry.h */,
+				24F6A2812070F0BB002538B6 /* MDGeometry.m */,
+				24872F962070DBFC00227825 /* MDNumber.h */,
+				24872F972070DBFC00227825 /* MDNumber.m */,
 				24660D63206CC65800E43C2A /* AppDelegate.h */,
 				24660D64206CC65800E43C2A /* AppDelegate.m */,
 				24660D66206CC65800E43C2A /* ViewController.h */,
@@ -97,7 +107,7 @@
 		24660D58206CC65800E43C2A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Maryna Delidova";
 				TargetAttributes = {
 					24660D5F206CC65800E43C2A = {
@@ -144,7 +154,9 @@
 			files = (
 				24660D68206CC65800E43C2A /* ViewController.m in Sources */,
 				24660D73206CC65800E43C2A /* main.m in Sources */,
+				24F6A2822070F0BB002538B6 /* MDGeometry.m in Sources */,
 				24660D65206CC65800E43C2A /* AppDelegate.m in Sources */,
+				24872F982070DBFC00227825 /* MDNumber.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,6 +196,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -191,6 +204,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -218,7 +232,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -239,6 +253,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -246,6 +261,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -267,7 +283,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
