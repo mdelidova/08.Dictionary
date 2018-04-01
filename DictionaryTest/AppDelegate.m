@@ -91,12 +91,11 @@
     CGFloat perimeter1 = [geometry perimeter:side1 and:side2]; // perimeter1:side1 and: side2];
     CGFloat area1 = [geometry area:side1 and: side2];
     
-    NSLog(@"P = %d, S = %f", perimeter1, area1);
+    NSLog(@"P = %f, S = %f", perimeter1, area1);
     
     CGFloat diameter = 5;
     
     CGFloat length = [geometry length:diameter];
-    
     NSLog(@"L = %f", length);
     
     CGFloat length1 = 2;
@@ -105,6 +104,27 @@
     CGFloat surfaceArea = [geometry surfaceArea:length1];
     
     NSLog(@"V = %f, S = %f", amount, surfaceArea);
+    
+    CGFloat length2 = 5;
+    CGFloat length3 = 6;
+    
+    CGFloat amount1 = [geometry amount:length1 and:length2 andThen:length3];
+    CGFloat surfaceArea1 = [geometry surfaceArea:length1 and:length2 andThen:length3];
+    
+    NSLog(@"V = %f, S = %f",amount, surfaceArea);
+    
+    CGFloat radius = 2;
+    
+    CGFloat circleLength = [geometry circleLength:radius];
+    CGFloat circleArea = [geometry circleArea:radius];
+    
+    CGFloat number1 = 5;
+    CGFloat number2 = 8;
+    
+    CGFloat everage = [geometry everage:number1 and:number2];
+    
+    NSLog(@"Everage = %f",everage);
+ 
     
     return YES;
 }

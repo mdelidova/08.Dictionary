@@ -11,16 +11,24 @@
 
 @interface MDGeometry : NSObject
 
-- (CGFloat) perimeter: (CGFloat)side;
-- (CGFloat) perimeter: (CGFloat)side1 and: (CGFloat)side2;
+- (CGFloat) perimeter: (CGFloat) side;
+- (CGFloat) perimeter: (CGFloat) side1 and: (CGFloat)side2;
 
-- (CGFloat) area: (CGFloat)side;
-- (CGFloat) area: (CGFloat)side1 and: (CGFloat)side2;
+- (CGFloat) area: (CGFloat) side;
+- (CGFloat) area: (CGFloat) side1 and: (CGFloat)side2;
 
 - (CGFloat) length: (CGFloat) diameter;
 
 - (CGFloat) amount: (CGFloat) length;
+- (CGFloat) amount: (CGFloat) length1 and: (CGFloat) length2 andThen: (CGFloat) length3;
 
 - (CGFloat) surfaceArea: (CGFloat) length;
+- (CGFloat) surfaceArea: (CGFloat) length1 and: (CGFloat) length2 andThen: (CGFloat) length3;
+
+- (CGFloat) circleLength: (CGFloat) radius;
+- (CGFloat) circleArea: (CGFloat) radius;
+
+- (CGFloat) everage: (CGFloat) number1 and: (CGFloat) number2;
+
 
 @end
