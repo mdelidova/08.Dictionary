@@ -124,10 +124,17 @@
     CGFloat everage = [geometry everage:number1 and:number2];
     
     NSLog(@"Everage = %f",everage);
- 
-    CGFloat squareRoot = [geometry squareRoot:number1 and:number2];
     
-    NSLog(@"SquareRoot = %f", squareRoot);
+    CGFloat number3 = -7;
+    CGFloat number4 = 7;
+ 
+    CGFloat squareRoot = [geometry squareRoot:number3 and:number4];
+    
+    if (number3 >= 0 && number4 >= 0) {
+        NSLog(@"SquareRoot = %f", squareRoot);
+    } else {
+        NSLog(@"ERROR!!!");
+    }
     
     return YES;
 }
