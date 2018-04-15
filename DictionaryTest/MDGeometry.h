@@ -30,5 +30,6 @@
 
 - (CGFloat) everage: (CGFloat) number1 and: (CGFloat) number2;
 
+- (CGFloat) squareRoot: (CGFloat) number1 and: (CGFloat) number2;
 
 @end

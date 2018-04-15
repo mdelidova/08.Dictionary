@@ -118,13 +118,16 @@
     CGFloat circleLength = [geometry circleLength:radius];
     CGFloat circleArea = [geometry circleArea:radius];
     
-    CGFloat number1 = 5;
+    CGFloat number1 = 8;
     CGFloat number2 = 8;
     
     CGFloat everage = [geometry everage:number1 and:number2];
     
     NSLog(@"Everage = %f",everage);
  
+    CGFloat squareRoot = [geometry squareRoot:number1 and:number2];
+    
+    NSLog(@"SquareRoot = %f", squareRoot);
     
     return YES;
 }

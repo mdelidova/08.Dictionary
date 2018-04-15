@@ -59,5 +59,8 @@
     return (number1 + number2) / 2;
 }
 
+- (CGFloat) squareRoot:(CGFloat)number1 and:(CGFloat)number2 {
+    return sqrt(number1 * number2);
+}
 
 @end
