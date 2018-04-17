@@ -30,8 +30,11 @@
 
 - (CGFloat) everage: (CGFloat) number1 and: (CGFloat) number2;
 
-- (CGFloat) squareRoot: (CGFloat) number3 and: (CGFloat) number4;
+- (CGFloat) squareRoot: (CGFloat) digit1 and: (CGFloat) digit2;
 
-
+- (CGFloat) sum: (CGFloat) numeral1 and: (CGFloat) numeral2;
+- (CGFloat) subtraction: (CGFloat) numeral1 and: (CGFloat) numeral2;
+- (CGFloat) multiplication: (CGFloat) numeral1 and: (CGFloat) numeral2;
+- (CGFloat) division: (CGFloat) numeral1 and: (CGFloat) numeral2;
 
 @end

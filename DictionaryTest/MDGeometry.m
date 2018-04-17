@@ -59,9 +59,12 @@
     return (number1 + number2) / 2;
 }
 
-- (CGFloat) squareRoot:(CGFloat)number3 and:(CGFloat)number4 {
-    return sqrt(number3 * number4);
+- (CGFloat) squareRoot:(CGFloat)digit1 and:(CGFloat)digit2 {
+    return sqrt(digit1 * digit2);
 }
 
+- (CGFloat) sum:(CGFloat)numeral1 and:(CGFloat)numeral2 {
+    return powf(numeral1,2) + powf(numeral2,2);
+}
 
 @end

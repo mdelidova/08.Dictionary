@@ -125,16 +125,23 @@
     
     NSLog(@"Everage = %f",everage);
     
-    CGFloat number3 = -7;
-    CGFloat number4 = 7;
+    CGFloat digit1 = -7;
+    CGFloat digit2 = 7;
  
-    CGFloat squareRoot = [geometry squareRoot:number3 and:number4];
+    CGFloat squareRoot = [geometry squareRoot:digit1 and:digit2];
     
-    if (number3 >= 0 && number4 >= 0) {
+    if (digit1 >= 0 && digit2 >= 0) {
         NSLog(@"SquareRoot = %f", squareRoot);
     } else {
         NSLog(@"ERROR!!!");
     }
+    
+    CGFloat numeral1 = 2;
+    CGFloat numeral2 = 5;
+    
+    CGFloat sum = [geometry sum:numeral1 and:numeral2];
+    
+    NSLog(@"Sum = %f", sum);
     
     return YES;
 }
