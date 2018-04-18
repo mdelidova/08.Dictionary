@@ -67,4 +67,16 @@
     return powf(numeral1,2) + powf(numeral2,2);
 }
 
+- (CGFloat) subtraction:(CGFloat)numeral1 and:(CGFloat)numeral2 {
+    return powf(numeral1, 2) - powf(numeral2, 2);
+}
+
+- (CGFloat) multiplication:(CGFloat)numeral1 and:(CGFloat)numeral2 {
+    return powf(numeral1, 2) * powf(numeral2, 2);
+}
+
+- (CGFloat) division:(CGFloat)numeral1 and:(CGFloat)numeral2 {
+    return powf(numeral1, 2) / powf(numeral2, 2);
+}
+
 @end

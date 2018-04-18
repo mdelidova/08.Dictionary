@@ -125,7 +125,7 @@
     
     NSLog(@"Everage = %f",everage);
     
-    CGFloat digit1 = -7;
+    CGFloat digit1 = 7;
     CGFloat digit2 = 7;
  
     CGFloat squareRoot = [geometry squareRoot:digit1 and:digit2];
@@ -140,8 +140,11 @@
     CGFloat numeral2 = 5;
     
     CGFloat sum = [geometry sum:numeral1 and:numeral2];
+    CGFloat subtraction = [geometry subtraction:numeral1 and:numeral2];
+    CGFloat multiplication = [geometry multiplication:numeral1 and:numeral2];
+    CGFloat division = [geometry division:numeral1 and:numeral2];
     
-    NSLog(@"Sum = %f", sum);
+    NSLog(@"Sum = %f, subtraction = %f, multiplication = %f, division = %f", sum, subtraction, multiplication, division);
     
     return YES;
 }
