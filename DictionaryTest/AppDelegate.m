@@ -144,7 +144,15 @@
     CGFloat multiplication = [geometry multiplication:numeral1 and:numeral2];
     CGFloat division = [geometry division:numeral1 and:numeral2];
     
-    NSLog(@"Sum = %f, subtraction = %f, multiplication = %f, division = %f", sum, subtraction, multiplication, division);
+    NSLog(@"Sum = %f, subtraction = %f, multiplication = %f, division = %f", sum, subtraction, multiplication, division );
+    
+    CGFloat cather1 = 5;
+    CGFloat cather2 = 7;
+    
+    CGFloat hyputenuse = [geometry hypotenuse:cather1 and:cather2];
+    CGFloat perimeterOfTriangle = [geometry perimeter:cather1 and:cather2 andThen:hyputenuse];
+    
+    NSLog(@"Hyputenuse = %f, Perimeter = %f", hyputenuse, perimeterOfTriangle);
     
     return YES;
 }

@@ -8,11 +8,13 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import <math.h>
 
 @interface MDGeometry : NSObject
 
 - (CGFloat) perimeter: (CGFloat) side;
-- (CGFloat) perimeter: (CGFloat) side1 and: (CGFloat)side2;
+- (CGFloat) perimeter: (CGFloat) side1 and: (CGFloat) side2;
+- (CGFloat) perimeter: (CGFloat) cather1 and: (CGFloat) cather2 andThen: (CGFloat) hyputenuse;
 
 - (CGFloat) area: (CGFloat) side;
 - (CGFloat) area: (CGFloat) side1 and: (CGFloat)side2;
@@ -36,5 +38,7 @@
 - (CGFloat) subtraction: (CGFloat) numeral1 and: (CGFloat) numeral2;
 - (CGFloat) multiplication: (CGFloat) numeral1 and: (CGFloat) numeral2;
 - (CGFloat) division: (CGFloat) numeral1 and: (CGFloat) numeral2;
+
+- (CGFloat) hypotenuse: (CGFloat) cather1 and: (CGFloat) cather2;
 
 @end

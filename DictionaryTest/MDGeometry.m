@@ -18,6 +18,10 @@
     return 2 * (side1 + side2);
 }
 
+- (CGFloat) perimeter:(CGFloat)cather1 and:(CGFloat)cather2 andThen:(CGFloat)hyputenuse {
+    return cather1 + cather2 + hyputenuse;
+}
+
 - (CGFloat) area:(CGFloat)side {
     return side * side;
 }
@@ -77,6 +81,10 @@
 
 - (CGFloat) division:(CGFloat)numeral1 and:(CGFloat)numeral2 {
     return powf(numeral1, 2) / powf(numeral2, 2);
+}
+
+- (CGFloat) hypotenuse:(CGFloat)cather1 and:(CGFloat)cather2 {
+    return sqrtf(powf(cather1, 2) + powf(cather2, 2));
 }
 
 @end
